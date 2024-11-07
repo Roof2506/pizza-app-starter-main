@@ -48,8 +48,10 @@ const pizzaData = [
   ];
 
 function Header(){
+    const isOpenTime = currHour >= 10 && currHour < 22;
     return <div className="header">
         <h1>Attic Pizzeria</h1>
+        {isOpenTime && <p>It's between 10 AM and 10 PM! Time to enjoy pizza!</p>}
     </div>
 }
 function Pizza({name,ingrediant,price,image}){
