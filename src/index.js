@@ -51,7 +51,7 @@ function Header(){
     const isOpenTime = currTime >= "10:00:00" & currTime <= "22:00:00";
     return <div className="header">
         <h1>Attic Pizzeria</h1>
-        {isOpenTime && <p>It's between 10 AM and 10 PM! Time to enjoy pizza!</p>}
+        {isOpenTime && <p className="menu" style={{fontSize:20}}>Time to enjoy the best pizzas!</p>}
     </div>
 }
 function Pizza({name,ingrediant,price,image}){
